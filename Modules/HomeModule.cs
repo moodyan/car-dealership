@@ -23,6 +23,15 @@ namespace CarDealership
         return View["car-added.cshtml", newCar];
       };
 
+      // Post["/car-cleared"] = _ => {
+      //   string userMakeModel = Request.Form["make-model"];
+      //   int userPrice = Request.Form["price"];
+      //   int userMiles = Request.Form["miles"];
+      //   Car newCar = new Car(userMakeModel, userPrice, userMiles);
+      //   newCar.Remove();
+      //   return View["add-car.cshtml"];
+      // };
+
     }
   }
 }

@@ -49,9 +49,10 @@ namespace CarDealership.Objects
     {
       _carDescription.Add(this);
     }
-    public static void ClearAll()
-    {
-      _carDescription.Clear();
-    }
+    // public void Remove()
+    // {
+    //   _carDescription.Remove(this);
+    // }
   }
 }
+// _carDescription.Last()
