@@ -9,10 +9,10 @@ namespace CarDealership
     public HomeModule()
     {
       Get["/"] = _ => View["add-car.cshtml"];
-      // Get["/car-collection"] = _ => {
-      //   List<Car> allCars = Car.GetAll();
-      //   return View["car-collection.cshtml", allCars];
-      // };
+      Get["/car-collection"] = _ => {
+        List<Car> allCars = Car.GetAll();
+        return View["car-collection.cshtml", allCars];
+      };
 
       Post["/car-added"] = _ => {
         string userMakeModel = Request.Form["make-model"];
